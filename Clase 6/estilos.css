@@ -1,15 +1,19 @@
-h2{ */ selector de elementos */
+body { /* selector de elementos */
+
+}
+
+h2{
     color: rgb(170, 00, 255);
     font-size: 50px;
 }
 
-.subtitulo-especial{
+.subtitulo-especial{ /* Selector de clases */
     color: green;
     font-family: 'Times New Roman', Times, serif;
 }
 
 *{/* selector universal */
-    font-family: sans-serif;
+    font-family: sans-serif !important;
 }
 
 .subtitulo-especial{
@@ -22,4 +26,5 @@ h2{ */ selector de elementos */
 
 .super-especial{
     color: red;
+    font-family: 'Times New Roman', Times, serif !important;
 }
