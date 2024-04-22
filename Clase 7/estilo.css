@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('./font.css'); */
 *{
     font-family: "Poppins", sans-serif;
 }
 
 h1 {
-    color: rgba(9, 148, 148, 1);
-    font-size: 30px;
-    letter-spacing: -1px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    letter-spacing: 0px;
     word-spacing: 10px;
     text-decoration: underline red wavy; /* overline - encima del texto | line-through - tachado */
-    text-shadow: 200px 10px 3px black,
-    200px 50px 3px black,
-    0px 0px 3px black;/* eje X: unidad de tamaño | eje Y: ut | valor difuminado: ut | color */
+    text-shadow: /* 200px 10px 3px rgb(120, 6, 6),
+    200px 50px 3px rgb(120, 6, 6), */
+    0px 0px 10px rgb(78, 96, 255);/* eje X: unidad de tamaño | eje Y: ut | valor difuminado: ut | color */
     background-color: black;
-    width: 300px;
+    /* width: 300px; */
     /* height: 100px */
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Jacquard 24", system-ui;
 
 }
 

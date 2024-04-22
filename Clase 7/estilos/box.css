@@ -2,12 +2,19 @@
 
 *{
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 .caja {
     background-color: black;
     height: 200px;
-    width: 50px;
+    width: 200px;
+    /* display */
+    margin-top: 80px;
+    color: white;
+    padding: 10px;
+    margin-left: 200px;
+    display: inline-block;
 }
 
 h1{
@@ -16,7 +23,7 @@ h1{
 
 a{
     background-color: brown;
-    /* width: 400px;  */
+    width: 400px;
     display: inline-block;
 }
 
@@ -28,3 +35,26 @@ span {
     width: 400px;
     height: 200px;
 } */
+
+header {
+    color: white;
+}
+
+.logo {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    text-align: end;
+}
+
+.link {
+    display: inline-block;
+    background-color: transparent;
+    background-color: rgb(158, 158 , 237);
+    width: 100px;
+    text-align: center;
+    height: 50px;
+}
