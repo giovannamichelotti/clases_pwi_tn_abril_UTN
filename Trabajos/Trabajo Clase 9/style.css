@@ -24,6 +24,8 @@ h1{
 }
 
 .cards{
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -31,7 +33,7 @@ h1{
 
 }
 
-.cards .tarjetas .card{
+.cards .card{
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -43,18 +45,18 @@ h1{
     margin-left: 20px;
 }
 
-.cards .tarjetas .card .estrellas{
-    padding: 20px 20px;
-    letter-spacing: 5px;
+.cards .card .estrellas{
+    padding: 20px 5px;
+    letter-spacing: 5cap;
     color: #673DE6;
 }
 
-.cards .tarjetas .card .testimonio{
+.cards .card .testimonio{
     font-size: 14px;
     color: #2F1C6A;
 }
 
-.cards .tarjetas .card .link{
+.cards .card .link{
     font-size: 16px;
     color: #673DE6;
     padding: 10px 0;
