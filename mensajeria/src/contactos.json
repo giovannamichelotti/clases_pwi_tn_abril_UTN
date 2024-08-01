@@ -2,7 +2,7 @@
     {
         "nombre": "Arya Stark",
         "imagen": "AryaStark.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 23:30",
         "id": 1,
         "nro": "11-4411-0511",
         "mensajes": [
@@ -51,7 +51,7 @@
     {
         "nombre": "Daenerys Targaryen",
         "imagen": "Daenerys.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 23:00",
         "id": 2,
         "nro":  "11-4411-0512",
         "mensajes": [
@@ -84,7 +84,7 @@
     {
         "nombre": "Jon Snow",
         "imagen": "JonSnow.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 22:45",
         "id": 3,
         "nro": "11-4411-0513",
         "mensajes": [
@@ -125,7 +125,7 @@
     {
         "nombre": "Cersei Lannister",
         "imagen": "Cersei.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 22:00",
         "id": 4,
         "nro": "11-4411-0514",
         "mensajes": [
@@ -166,7 +166,7 @@
     {
         "nombre": "Bran Stark",
         "imagen": "BranStark.jpg",
-        "ultima_conexion": "ayer",
+        "ultima_conexion": "hoy a las 21:30",
         "id": 5,
         "nro": "11-4411-0515",
         "mensajes": [
@@ -207,7 +207,7 @@
     {
         "nombre": "Tyrion Lannister",
         "imagen": "Tyrion.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 22:00",
         "id": 6,
         "nro": "11-4411-0516",
         "mensajes": [
@@ -240,7 +240,7 @@
     {
         "nombre": "Varys",
         "imagen": "Varys.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 20:43",
         "id": 7,
         "nro": "11-4411-0517",
         "mensajes": [
@@ -265,7 +265,7 @@
     {
         "nombre": "Hodor",
         "imagen": "Hodor.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 19:15",
         "id": 8,
         "nro": "11-4411-0518",
         "mensajes": [
@@ -306,7 +306,7 @@
     {
         "nombre": "Night King",
         "imagen": "NichtKing.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 19:00",
         "id": 9,
         "nro": "11-4411-0519",
         "mensajes": [
@@ -323,7 +323,7 @@
     {
         "nombre": "Samwell Tarly",
         "imagen": "Sam.jpg",
-        "ultima_conexion": "hoy",
+        "ultima_conexion": "hoy a las 22:59",
         "id": 10,
         "nro": "11-4411-0520",
         "mensajes": [

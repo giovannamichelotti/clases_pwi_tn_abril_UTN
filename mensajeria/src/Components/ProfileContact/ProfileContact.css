@@ -1,11 +1,14 @@
 body {
-    color: #FFF;
+    color: #E9EDEF;
 }
 
 .general {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 .iconos-grandes-general {
@@ -47,9 +50,38 @@ body {
 .iconos-grandes-general .icono-titulo {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 8px 5px;
+    min-width: 33%;
 }
 
-.iconos-grandes-general .icono-titulo svg {
+.iconos-grandes-general {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    align-content: center;
+    justify-content: center;
+    align-items: center
+}
 
+.iconos-grandes-general .icono-titulo {
+    border: 1px solid #E9EDEF; 
+    border-radius: 10px;
+}
+
+.imagen {
+border-radius: 100%;
+}
+
+.volver {
+    color:#E9EDEF ;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+}
+
+.cabecera-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

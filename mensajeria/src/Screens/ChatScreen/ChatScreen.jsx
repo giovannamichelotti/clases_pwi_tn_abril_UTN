@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import { ChatHeaderInfo, ListaMensaje, MensajeForm } from '../../Components/Chat'
 import { useParams } from "react-router-dom";
+import MOOK_MENSAJES from '../../contactos.json'
 
 
-
-export const ChatScreen = ({contactos}) => {
+export const ChatScreen = () => {
     const {contactoID} = useParams()
-
+    const [contactos, setContactos] = useState([])
     const [contacto, setContacto] = useState ({})
+    const [mensajes, setMensajes] = useState ([])
 
+    useEffect(() => {
+        setContactos(MOOK_MENSAJES)
+    }, []);
+    
     useEffect(() => {
         const item = contactos.find(contacto => contacto.id === parseInt(contactoID) )
         setContacto(item);
-    }, []);
+        if (item) {
+            setMensajes(item.mensajes)
+        }
+    }, [contactos]);
     
     return (
         <div>
-            Hola {contactoID} {contacto && contacto.id} {contacto && contacto.nombre}
-            <ChatHeaderInfo id={contactoID}/>
+            <ChatHeaderInfo contacto={contacto}/>
             {/* Este componente hara el mapeo */}
             {/* <ListaMensaje/> */}
             <MensajeForm />

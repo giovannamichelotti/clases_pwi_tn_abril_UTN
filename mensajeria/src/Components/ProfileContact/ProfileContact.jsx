@@ -7,7 +7,7 @@ import { LuBell } from "react-icons/lu";
 import { IoMdLock } from "react-icons/io";
 import { BsClockHistory } from "react-icons/bs";
 import { PiLockLaminatedLight } from "react-icons/pi";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 export const ProfileContact = ({}) => {
 
   const {contactoID} = useParams()
@@ -25,21 +25,21 @@ export const ProfileContact = ({}) => {
     if (item) {
       setMensajes(item.mensajes)
     }
-    console.log(item)
-    
   }, [contactos]);
 
 
   return (
     <div className='general'>
-        <Link className='volver' to={contacto && `/chat/` + contacto.id}><FaArrowAltCircleLeft /></Link>
+        <Link className='volver' to={contacto && `/chat/` + contacto.id}><FaArrowLeft /></Link>
+        <div className='cabecera-profile'>
           <img src={contacto && ('/' + contacto.imagen)} className='imagen' />
           <div>
             {contacto && contacto.nombre} <br />
             {contacto && contacto.nro}
           </div>
           <div>
-            Ult. vez {contacto && contacto.ultima_conexion} a las {mensajes && mensajes.length >0 && mensajes[mensajes.length -1].hora}
+            Ult. vez {contacto && contacto.ultima_conexion}
+          </div>
           </div>
           <div className='iconos-grandes-general'>
             <div className='icono-titulo'><MdOutlineMessage className='iconos-grandes' /> Mensaje</div>

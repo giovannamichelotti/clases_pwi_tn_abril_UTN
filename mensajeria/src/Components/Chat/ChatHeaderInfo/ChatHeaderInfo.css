@@ -1,0 +1,44 @@
+.chat-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    background-color: #384b58;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imagen-chat {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.flecha {
+    color: #E9EDEF;
+    font-size: 20px;
+}
+
+.contacto-total {
+    color: #E9EDEF;
+}
+
+.contacto-total .contacto-nombre {
+    font-size: 20px;
+    font-weight: 650;
+    padding: 0;
+}
+
+.contacto-total .ultima-conexion {
+    padding: 0;
+}
+
+.iconos-header {
+    display: flex;
+    align-items: center;
+    align-items: end;
+    font-size: 25px;
+    margin-left: auto;
+}
+
+
