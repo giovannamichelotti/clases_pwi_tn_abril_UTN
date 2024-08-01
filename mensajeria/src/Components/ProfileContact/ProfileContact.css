@@ -1,3 +1,55 @@
 body {
     color: #FFF;
 }
+
+.general {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconos-grandes-general {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.icono-titulo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.icono-titulo svg {
+    margin: 0;
+    padding: 0;
+}
+
+.opciones {
+    margin: 0;
+    padding: 0;
+}
+
+.opcion .icono-titulo svg {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.opcion span {
+    padding-left: 30px;
+}
+
+.iconos-grandes-general .icono-titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.iconos-grandes-general .icono-titulo svg {
+
+}

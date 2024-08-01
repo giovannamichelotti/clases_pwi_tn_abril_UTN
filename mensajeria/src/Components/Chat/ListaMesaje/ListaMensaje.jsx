@@ -9,9 +9,9 @@ export const ListaMensaje = ({mensajes}) => {
         mensajes.map(mensaje => <Mensaje/>)
       }
     </div>
-  )
+  )   
 }
-
+  
 /* Va a importar el mensaje y tiene que haber un mapeo
 'Toda la lista de chat'
 va a recibir una prop y por cada mensaje (elemento) va a invocar al componente mensaje

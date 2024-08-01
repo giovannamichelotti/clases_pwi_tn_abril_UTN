@@ -5,3 +5,5 @@ export const MensajeForm = () => {
     <div>MensajeForm</div>
   )
 }
+
+/* Donde van los nuevos mensajes (input) */

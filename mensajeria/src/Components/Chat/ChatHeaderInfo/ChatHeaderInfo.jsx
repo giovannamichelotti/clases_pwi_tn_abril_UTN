@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const ChatHeaderInfo = () => {
+export const ChatHeaderInfo = ({id}) => {
   return (
-    <div>ChatHeaderInfo</div>
+    <div>ChatHeaderInfo {id}</div>
   )
 }
+
+/* Aca va el encabezado del Chat */

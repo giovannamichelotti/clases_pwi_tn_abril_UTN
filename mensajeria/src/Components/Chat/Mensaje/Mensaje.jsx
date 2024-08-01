@@ -8,6 +8,4 @@ export const Mensaje = () => {
 }
 
 
-/* RAFC = crea un componente y lo exporta
-RAFCE
-*/
+/* Va a mostrar el chat, 'Sería el globito del chat' */

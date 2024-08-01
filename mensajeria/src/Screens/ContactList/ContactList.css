@@ -1,0 +1,82 @@
+.lista-contactos {
+    list-style-type:none;
+
+}
+
+.lista-contacto .contacto{
+    color: #E9EDEF;
+    border-top: 1px solid #E9EDEF;
+    font-size: 20px;
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    font-weight: 600;
+    display: flex;
+}
+
+.whatsapp {
+    color: #E9EDEF;
+    background-color: #138d4c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+
+}
+
+.lupita {
+    color: #E9EDEF;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+.input-buscar {
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #384b58;
+    color: #E9EDEF;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+
+.input-buscar::placeholder {
+    color: #7fbd90;
+}
+
+.imagenes {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    
+}
+
+.barra-busqueda {
+    position: relative;
+}
+
+.tiempo {
+    margin-left: auto;
+}
+
+.texto {
+    opacity: 0.6;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+    
+}
+
+@media screen and (max-width: 2000) {
+    
+}

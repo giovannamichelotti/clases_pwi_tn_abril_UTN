@@ -1,8 +1,8 @@
 [
     {
         "nombre": "Arya Stark",
-        "thumbnail": "AryaStark.png",
-        "ultima_conexion": "ayer",
+        "imagen": "AryaStark.jpg",
+        "ultima_conexion": "hoy",
         "id": 1,
         "nro": "11-4411-0511",
         "mensajes": [
@@ -50,8 +50,8 @@
     },
     {
         "nombre": "Daenerys Targaryen",
-        "thumbnail": "Daenerys.png",
-        "ultima_conexion": "ayer",
+        "imagen": "Daenerys.jpg",
+        "ultima_conexion": "hoy",
         "id": 2,
         "nro":  "11-4411-0512",
         "mensajes": [
@@ -83,7 +83,7 @@
     },
     {
         "nombre": "Jon Snow",
-        "thumbnail": "JonSnow.png",
+        "imagen": "JonSnow.jpg",
         "ultima_conexion": "hoy",
         "id": 3,
         "nro": "11-4411-0513",
@@ -124,7 +124,7 @@
     },
     {
         "nombre": "Cersei Lannister",
-        "thumbnail": "Cersei.jpg",
+        "imagen": "Cersei.jpg",
         "ultima_conexion": "hoy",
         "id": 4,
         "nro": "11-4411-0514",
@@ -165,7 +165,7 @@
     },
     {
         "nombre": "Bran Stark",
-        "thumbnail": "BranStark.png",
+        "imagen": "BranStark.jpg",
         "ultima_conexion": "ayer",
         "id": 5,
         "nro": "11-4411-0515",
@@ -205,22 +205,22 @@
         ]
     },
     {
-        "nombre": "Tyron Lannister",
-        "thumbnail": "Tyron.jpg",
+        "nombre": "Tyrion Lannister",
+        "imagen": "Tyrion.jpg",
         "ultima_conexion": "hoy",
         "id": 6,
         "nro": "11-4411-0516",
         "mensajes": [
             {
                 "autor": "yo",
-                "texto": "Hola Tyron, ¿cómo estás?",
+                "texto": "Hola Tyrion, ¿cómo estás?",
                 "estado": "visto",
                 "dia": "hoy",
                 "hora": "19:50",
                 "id": "1"
             },
             {
-                "autor": "Tyron Lannister",
+                "autor": "Tyrion Lannister",
                 "texto": "Bebiendo y desarrollando estrategias, como siempre",
                 "estado": "visto",
                 "dia": "hoy",
@@ -239,7 +239,7 @@
     },
     {
         "nombre": "Varys",
-        "thumbnail": "Varys.webp",
+        "imagen": "Varys.jpg",
         "ultima_conexion": "hoy",
         "id": 7,
         "nro": "11-4411-0517",
@@ -264,7 +264,7 @@
     },
     {
         "nombre": "Hodor",
-        "thumbnail": "Hodor.jpg",
+        "imagen": "Hodor.jpg",
         "ultima_conexion": "hoy",
         "id": 8,
         "nro": "11-4411-0518",
@@ -305,8 +305,8 @@
     },
     {
         "nombre": "Night King",
-        "thumbnail": "NichtKing.jpg",
-        "ultima_conexion": "ayer",
+        "imagen": "NichtKing.jpg",
+        "ultima_conexion": "hoy",
         "id": 9,
         "nro": "11-4411-0519",
         "mensajes": [
@@ -322,7 +322,7 @@
     },
     {
         "nombre": "Samwell Tarly",
-        "thumbnail": "Sam.webp",
+        "imagen": "Sam.jpg",
         "ultima_conexion": "hoy",
         "id": 10,
         "nro": "11-4411-0520",

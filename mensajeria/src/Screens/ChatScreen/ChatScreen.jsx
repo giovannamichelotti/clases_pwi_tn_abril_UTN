@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ChatHeaderInfo, ListaMensaje, MensajeForm } from '../../Components/Chat'
 import { useParams } from "react-router-dom";
 
@@ -7,20 +7,16 @@ import { useParams } from "react-router-dom";
 export const ChatScreen = ({contactos}) => {
     const {contactoID} = useParams()
 
+    const [contacto, setContacto] = useState ({})
+
     useEffect(() => {
-        console.log('hola')
-        const contacto = contactos.find(contacto => {
-            console.log(contacto.id , parseInt(contactoID))
-            return contacto.id === parseInt(contactoID)
-            
-        });
-        console.log(contacto)
-     /*    setMensajesIniciales(contacto.mensajes); */
+        const item = contactos.find(contacto => contacto.id === parseInt(contactoID) )
+        setContacto(item);
     }, []);
     
     return (
         <div>
-            Hola {contactoID} {contacto && contacto.id}
+            Hola {contactoID} {contacto && contacto.id} {contacto && contacto.nombre}
             <ChatHeaderInfo id={contactoID}/>
             {/* Este componente hara el mapeo */}
             {/* <ListaMensaje/> */}

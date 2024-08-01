@@ -16,7 +16,7 @@ body {
     background-color: #111B21;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
     div#root, div#root > div {
         padding: 0 !important;
         margin: 0 !important;
