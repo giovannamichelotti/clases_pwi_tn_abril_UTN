@@ -25,8 +25,7 @@ export const ChatScreen = () => {
     return (
         <div>
             <ChatHeaderInfo contacto={contacto}/>
-            {/* Este componente hara el mapeo */}
-            {/* <ListaMensaje/> */}
+            <ListaMensaje mensajes={mensajes}/>
             <MensajeForm />
         </div>
     )

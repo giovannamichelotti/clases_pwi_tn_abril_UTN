@@ -1,0 +1,18 @@
+.mensaje {
+    border-radius: 3px;
+}
+
+.mensaje.mio {
+    background-color: green;
+    margin-left: auto;
+}
+
+.mensaje.otro {
+    background-color: black;
+}
+
+.lista-mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
