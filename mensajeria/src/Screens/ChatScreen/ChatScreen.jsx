@@ -10,28 +10,6 @@ export const ChatScreen = () => {
     const [contacto, setContacto] = useState ({})
     const [mensajes, setMensajes] = useState ([])
 
-    //Esto debería estar en mensajeform
-    const [mensaje, setMensaje] = useState ('')
-    const cambiaMensaje = (e) => {
-        setMensaje(e.target.value)
-    }
-
-    const enviarMensaje = (e) => {
-        e.preventDefault()
-        const mensajeNuevo = {
-            autor: "yo",
-            texto: mensaje,
-            estado: "",
-            dia: "hoy",
-            hora: "23:07",
-            id: mensajes.length + 1
-        }
-        const losMensajesNuevos = [...mensajes, mensajeNuevo]
-        localStorage.setItem(contacto.id, JSON.stringify(losMensajesNuevos))
-        setMensajes(losMensajesNuevos)
-        setMensaje ('')
-    }
-
     useEffect(() => {
         setContactos(MOOK_MENSAJES)
     }, []);
@@ -44,16 +22,26 @@ export const ChatScreen = () => {
             setMensajes(losMensajes)
         }
     }, [contactos]);
+
+    const agregarMensaje = (mensaje) => {
+        const mensajeNuevo = {
+            autor: "yo",
+            texto: mensaje,
+            estado: "",
+            dia: "hoy",
+            hora: "23:07",
+            id: mensajes.length + 1
+        }
+        const losMensajesNuevos = [...mensajes, mensajeNuevo]
+        localStorage.setItem(contacto.id, JSON.stringify(losMensajesNuevos))
+        setMensajes(losMensajesNuevos)
+    }
     
     return (
         <div>
             <ChatHeaderInfo contacto={contacto}/>
             <ListaMensaje mensajes={mensajes}/>
-            {/* <MensajeForm /> */}
-            <form onSubmit={enviarMensaje}>
-                <input type="text" value={mensaje} onChange={cambiaMensaje}/>
-                <button type='submit'>Enviar</button>
-            </form>
+            <MensajeForm mensajeEnviado={agregarMensaje}/>
         </div>
     )
 }

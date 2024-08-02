@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { ChatScreen } from './Screens/ChatScreen/ChatScreen'
 import { ContactList } from './Screens/ContactList/ContactList'
 import { ProfileContact } from './Components/ProfileContact/ProfileContact'
 import { Routes, Route } from 'react-router-dom'
-    function App() {
+
+function App() {
     return (
         <Routes>
             <Route path='/' element={<ContactList/>}/>
@@ -11,6 +12,6 @@ import { Routes, Route } from 'react-router-dom'
             <Route path='/infocontacto/:contactoID' element={<ProfileContact/>}/>
         </Routes>
     )
-    }
+}
 
-    export default App
+export default App
