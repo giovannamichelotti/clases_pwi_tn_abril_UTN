@@ -1,17 +1,35 @@
 .lista-contactos {
     list-style-type:none;
+}
 
+.lista-contacto {
+    padding: 0;
+    margin: 0;
 }
 
 .lista-contacto .contacto{
     color: #E9EDEF;
-    border-top: 1px solid #E9EDEF;
+    border-top: 1px solid #202C33;
     font-size: 20px;
     display: flex; 
     align-items: center; 
     text-decoration: none; 
-    font-weight: 600;
     display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-contactos .contacto .nombre {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+.lista-contactos .contacto .texto{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 .whatsapp {
@@ -34,22 +52,23 @@
 .lupita {
     color: #E9EDEF;
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: 10px;
 }
 
 .input-buscar {
     width: 100%;
     border-radius: 15px;
+    border: none;
     font-size: 20px;
-    background-color: #384b58;
+    background-color: #202C33;
     color: #E9EDEF;
     padding-left: 35px;
     box-sizing: border-box;
 }
 
 .input-buscar::placeholder {
-    color: #7fbd90;
+    color: #8696A0;
 }
 
 .imagenes {
@@ -65,6 +84,7 @@
 
 .tiempo {
     margin-left: auto;
+    font-size: 14px;
 }
 
 .texto {

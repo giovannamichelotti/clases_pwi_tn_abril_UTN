@@ -41,7 +41,7 @@ export const ContactList = () => {
       </h1>
       <div className='barra-busqueda'>
         <FaMagnifyingGlass className='lupita' /> 
-        <input type="text" placeholder='Buscar' className='input-buscar' value={termino} onChange={buscar}/> 
+        <input type="text" placeholder='Buscar...' className='input-buscar' value={termino} onChange={buscar}/> 
       </div>
       <ul className='lista-contactos'>
         {contactosFiltrada.map(contacto=> (
@@ -49,7 +49,9 @@ export const ContactList = () => {
             <Link className='contacto' to={`chat/` + contacto.id}>
               <img src={contacto.imagen} className='imagenes' />
               <div>
-                {contacto.nombre} <br/>
+                <div className='nombre'>
+                  {contacto.nombre} <br/>
+                </div>
                 <div className='texto'>
                   {contacto.mensajes[contacto.mensajes.length -1].texto}
                 </div>
@@ -57,7 +59,6 @@ export const ContactList = () => {
               <div className='tiempo'>
                 {contacto.mensajes[contacto.mensajes.length - 1].dia !== 'hoy' && contacto.mensajes[contacto.mensajes.length - 1].dia} &nbsp;
                 {contacto.mensajes[contacto.mensajes.length - 1].hora}
-                
               </div>
             </Link>
           </li>

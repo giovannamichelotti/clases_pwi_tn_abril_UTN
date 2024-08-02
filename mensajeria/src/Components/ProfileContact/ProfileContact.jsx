@@ -8,6 +8,7 @@ import { IoMdLock } from "react-icons/io";
 import { BsClockHistory } from "react-icons/bs";
 import { PiLockLaminatedLight } from "react-icons/pi";
 import { FaArrowLeft } from "react-icons/fa";
+
 export const ProfileContact = ({}) => {
 
   const {contactoID} = useParams()
@@ -34,10 +35,14 @@ export const ProfileContact = ({}) => {
         <div className='cabecera-profile'>
           <img src={contacto && ('/' + contacto.imagen)} className='imagen' />
           <div>
-            {contacto && contacto.nombre} <br />
-            {contacto && contacto.nro}
+            <div className='profile-nombre'>
+              {contacto && contacto.nombre}
+            </div>
+            <div className='profile-nro'>
+              {contacto && contacto.nro}
+            </div>
           </div>
-          <div>
+          <div className='ult-vez'>
             Ult. vez {contacto && contacto.ultima_conexion}
           </div>
           </div>

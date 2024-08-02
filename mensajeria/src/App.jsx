@@ -3,6 +3,7 @@ import { ChatScreen } from './Screens/ChatScreen/ChatScreen'
 import { ContactList } from './Screens/ContactList/ContactList'
 import { ProfileContact } from './Components/ProfileContact/ProfileContact'
 import { Routes, Route } from 'react-router-dom'
+import './App.css'
 
 function App() {
     return (

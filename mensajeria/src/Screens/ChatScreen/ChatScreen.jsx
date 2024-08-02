@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ChatHeaderInfo, ListaMensaje, MensajeForm } from '../../Components/Chat'
 import { useParams } from "react-router-dom";
 import MOOK_MENSAJES from '../../contactos.json'
+import './ChatScreen.css'
 
 
 export const ChatScreen = () => {
@@ -9,6 +10,7 @@ export const ChatScreen = () => {
     const [contactos, setContactos] = useState([])
     const [contacto, setContacto] = useState ({})
     const [mensajes, setMensajes] = useState ([])
+    const [mensajesEncontrados, setMensajesEncontrados] = useState ([])
 
     useEffect(() => {
         setContactos(MOOK_MENSAJES)
@@ -36,12 +38,17 @@ export const ChatScreen = () => {
         localStorage.setItem(contacto.id, JSON.stringify(losMensajesNuevos))
         setMensajes(losMensajesNuevos)
     }
+
+    const buscarMensajes = (texto) => {
+        const mensajesEncontrados = mensajes.filter((item)=> item.texto.toLowerCase().includes(texto.toLowerCase()))
+        setMensajesEncontrados(mensajesEncontrados)
+    } 
     
     return (
-        <div>
-            <ChatHeaderInfo contacto={contacto}/>
-            <ListaMensaje mensajes={mensajes}/>
-            <MensajeForm mensajeEnviado={agregarMensaje}/>
+        <div className='chat-screen'>
+            <ChatHeaderInfo contacto={contacto} buscarMensajes={buscarMensajes}/>
+            <ListaMensaje mensajes={mensajes} mensajesEncontrados={mensajesEncontrados}/>
+            <MensajeForm mensajeEnviado={agregarMensaje} className='formulario-mensaje'/>
         </div>
     )
 }
